@@ -131,13 +131,12 @@ REST_FRAMEWORK = {
 #                          Settings for discord authentication
 # ############################################################################### #
 
-DISCORD_CLIENT_ID = getenv("DISCORD_CLIENT_ID", "")
 DISCORD_CLIENT_SECRET = getenv("DISCORD_CLIENT_SECRET", "")
+DISCORD_CLIENT_ID = getenv("DISCORD_CLIENT_ID", "")
+
 AUTH_COMPLETE_URL = getenv("OAUTH_COMPLETE_URL", "")
-
-AUTH_FAIL_URL = getenv("OAUTH_FAIL_URL", "")
 AUTH_REDIRECT_URL = getenv("OAUTH_REDIRECT_URL", "")
-
+AUTH_FAIL_URL = getenv("OAUTH_FAIL_URL", "")
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
